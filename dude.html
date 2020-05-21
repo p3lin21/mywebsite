@@ -12,7 +12,7 @@ function start()
 function keyListener()
 {
      var leftPos
-     if(window.event.keyCode > 0)
+     if(window.event.keyCode > 0)// Tests if any key has been pressed
    { leftPos = document.all.dude.style.left; 
      leftPos = parseInt(leftPos);
      }
@@ -36,20 +36,29 @@ document.getElementById('dude').innerHTML='<img src="images/dudeRT.gif" width="1
 
 </script>
 </head>
-<body bgcolor="#99CCFF" >
+<body bgcolor="#F20000" >
 
 <center>
 	<h1> Moving Guy </h1>
 	<input type="button" value="Start" onClick="start()"/>
 </center>
     
-<div id="backdrop " style="position:absolute; left:275; top:175;">
-	<img src="images/backdrop.jpg" width="800"/>
+<div id="bkgnd " style="position:absolute; left:275; top:175;">
+	<img src="images/backdrop.jpg" width="800" height="550"/>
 </div>
 
 
-<div id="dude" style="position:absolute; left:325; top:625;">
+<div id="dude" style="position:absolute; left:325; top:600;">
 	<img src="images/dudeRT.gif" width="100"/>
+</div>
+
+<div id="left" style="position:absolute; left:275; top:175;">
+	<img src="images/color.jpg" width="50" height="550"/>
+</div>
+    
+
+<div id="right" style="position:absolute; left:1075; top:175;">
+	<img src="images/color.jpg" width="50" height ="550"/>
 </div>
 
 <center><br/><p>Click here to <a href="index.html">return to my home page. </a></center>
